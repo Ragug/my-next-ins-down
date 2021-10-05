@@ -8,7 +8,7 @@ import time
 from consts import *
 import re
 
-'''Coded by Anish Gowda 😃😃😃😃'''
+'''@RG_bots 😃😃😃😃'''
 
 
 L = Instaloader()
@@ -61,7 +61,7 @@ def username(update, context):
             context.bot.send_photo(
                 chat_id=chat_id, photo=user.profile_pic_url,
                 caption=caption_msg, parse_mode='MarkdownV2')
-            update.message.reply_text("Can You support me by rating this bot 😃",
+            update.message.reply_text("You can get telegram stickers click bellow 😃",
                                       reply_markup=InlineKeyboardMarkup(ratingkey))
             msg.edit_text("finished.")
             time.sleep(5)
