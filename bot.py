@@ -32,7 +32,7 @@ def start(update, context):
     #update.message.reply_html(welcome_msg())
     keyboard = [[InlineKeyboardButton("Telegram Stickers", url=("https://t.me/RG_bots/63")],
                [InlineKeyboardButton(
-            "Report Bugs 😊", url=("https://t.me/RG_bots")],]
+            "Report Bugs 😊", url=("https://t.me/RG_bots")),]
 
     reply_markup = InlineKeyboardMarkup(keyboard)
     
