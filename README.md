@@ -19,5 +19,5 @@ Instagram DP Saver Bot is a telegram bot that can send you anyone's instagram pr
 
 - Deploy the bot here
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Ragug/my-next-ins-down.git)
 
