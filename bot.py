@@ -51,7 +51,7 @@ def username(update, context):
     query = update.message.text
 
     if not re.compile(mediaregpat).search(query):
-        msg = update.message.reply_text("Downloading...")
+        msg = update.message.reply_text("Downloading📥...")
         if re.compile(proregpat).search(query):
             query = get_username(query)
         chat_id = update.message.chat_id
@@ -73,7 +73,7 @@ def username(update, context):
 
 
 def source(update, context):
-    update.message.reply_text("You can get the source code of this bot here \n\n https://github.com/anishgowda21/Instagram_DP_Saver_Bot")
+    update.message.reply_text("Made by @Rg-bots")
 
 
 def error(update, context):
