@@ -30,7 +30,7 @@ def start(update, context):
     id = update.message.chat_id
     name = update.message.from_user['username']
     #update.message.reply_html(welcome_msg())
-    keyboard = [[InlineKeyboardButton("Telegram Strickers", url=f"https://t.me/RG_bots/63")],
+    keyboard = [[InlineKeyboardButton("Telegram Stickers", url=f"https://t.me/RG_bots/63")],
                [InlineKeyboardButton(
             "Report Bugs 😊", url="https://t.me/RG_bots")],]
 
@@ -72,7 +72,8 @@ def username(update, context):
                 chat_id=chat_id, photo=user.profile_pic_url,
                 caption=caption_msg, parse_mode='MarkdownV2')
             update.message.reply_text("You can get telegram stickers click bellow 😃",
-                                      reply_markup=InlineKeyboardMarkup(ratingkey))
+                                      reply_markup=InlineKeyboardMarkup(ratingkey),reply_markup=InlineKeyboardMarkup(ratingkey))
+            
             msg.edit_text("finished.")
             time.sleep(5)
         except Exception as e:
