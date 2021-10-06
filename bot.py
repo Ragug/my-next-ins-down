@@ -71,11 +71,9 @@ def username(update, context):
             context.bot.send_photo(
                 chat_id=chat_id, photo=user.profile_pic_url,
                 caption=caption_msg, parse_mode='MarkdownV2')
-            update.message.reply_text("You can get telegram stickers click bellow 😃",
+            update.message.reply_text("You can get telegram stickers and our bot list click bellows ",
                                       reply_markup=InlineKeyboardMarkup(ratingkey))
-            update.message.reply_text("",
-                                      reply_markup=InlineKeyboardMarkup(bots))
-            
+           
             msg.edit_text("finished.")
             time.sleep(5)
         except Exception as e:
