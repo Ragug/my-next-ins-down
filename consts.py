@@ -5,7 +5,7 @@ from telegram.utils.helpers import escape_markdown as es
 def welcome_msg():
     welcome_msg = '''<b>Welcome To the Bot</b>🖐🖐
  <i>Send me anyones instagram username or profile url to get their DP</i>
- ex : <b>virat.kohli</b> , <b>thenameisyash</b> etc'''
+ ex : <b>virat.kohli</b> etc'''
 
     return welcome_msg
 
@@ -40,3 +40,5 @@ def get_username(url):
 
 ratingkey = [[InlineKeyboardButton(
     "Telegram Stickers", url="https://t.me/RG_bots/63")]]
+bots = [[InlineKeyboardButton(
+    "Bot lists", url="https://t.me/RG_bots/66")]]
