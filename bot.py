@@ -34,7 +34,7 @@ def start(update, context):
 
     reply_markup = InlineKeyboardMarkup(keyboard)
 
-    update.message.reply_text('Contact The Maker:', reply_markup=reply_markup)
+    
 
 
 
