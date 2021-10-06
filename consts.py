@@ -39,6 +39,7 @@ def get_username(url):
 
 
 ratingkey = [[InlineKeyboardButton(
-    "Telegram Stickers", url="https://t.me/RG_bots/63")]]
-bots = [[InlineKeyboardButton(
-    "Bot lists", url="https://t.me/RG_bots/66")]]
+    "Telegram Stickers", url="https://t.me/RG_bots/63")],
+            [InlineKeyboardButton(
+    "Bot lists", url="https://t.me/RG_bots/66")],]
+bots=""
