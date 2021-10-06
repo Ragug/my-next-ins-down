@@ -73,7 +73,8 @@ def username(update, context):
                 caption=caption_msg, parse_mode='MarkdownV2')
             update.message.reply_text("You can get telegram stickers click bellow 😃",
                                       reply_markup=InlineKeyboardMarkup(ratingkey))
-            update.message.reply_text(reply_markup=InlineKeyboardMarkup(bots))
+            update.message.reply_text("",
+                                      reply_markup=InlineKeyboardMarkup(bots))
             
             msg.edit_text("finished.")
             time.sleep(5)
