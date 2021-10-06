@@ -29,10 +29,10 @@ logger = logging.getLogger(__name__)
 def start(update, context):
     id = update.message.chat_id
     name = update.message.from_user['username']
-    update.message.reply_html(welcome_msg())
-    keyboard = [[InlineKeyboardButton("Contact", url=f"telegram.me/{TELEGRAM_USERNAME}")],
+    #update.message.reply_html(welcome_msg())
+    keyboard = [[InlineKeyboardButton("Telegram Stickers", url=("https://t.me/RG_bots/63")],
                [InlineKeyboardButton(
-            "Report Bugs 😊", url="https://t.me/aryanvikash")],]
+            "Report Bugs 😊", url="https://t.me/RG_bots")],]
 
     reply_markup = InlineKeyboardMarkup(keyboard)
     
