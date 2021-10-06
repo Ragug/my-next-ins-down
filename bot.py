@@ -30,6 +30,13 @@ def start(update, context):
     id = update.message.chat_id
     name = update.message.from_user['username']
     update.message.reply_html(welcome_msg())
+     keyboard = [[InlineKeyboardButton(
+        "Contact", url=f"telegram.me/{TELEGRAM_USERNAME}")], ]
+
+    reply_markup = InlineKeyboardMarkup(keyboard)
+
+    update.message.reply_text('Contact The Maker:', reply_markup=reply_markup)
+
 
 
 def help_msg(update, context):
