@@ -33,6 +33,8 @@ def start(update, context):
     keyboard = [[InlineKeyboardButton("Contact", url=f"telegram.me/{TELEGRAM_USERNAME}")], ]
 
     reply_markup = InlineKeyboardMarkup(keyboard)
+    
+    update.message.reply_text(welcome_msg, reply_markup=reply_markup)
 
     
 
